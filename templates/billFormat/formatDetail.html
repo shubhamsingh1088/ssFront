@@ -1,0 +1,47 @@
+
+<div class="formatDetail" ng-controller="formatDetail" style="margin-top: 80px; margin-bottom: 50px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<br>
+				<br>
+				<h2>Format Download</h2>
+				<br>
+				<button type="button" class="btn btn-primary" ng-click="createOtp()" ng-disabled="disabled">Genarate-OTP
+				</button>
+				<br>
+				<div class="container">
+					<div class="row show-hide-message" ng-show="otpMessage">
+						<div class="alert alert-success" role="alert">
+							{{ otpMessage }}
+						</div>
+					</div>
+					<div class="row show-hide-message" ng-show="errorMsg">
+						<div class="alert alert-danger" role="alert">
+							{{ errorMsg }}
+						</div>
+					</div>
+				</div>
+
+				<form ng-submit="otpCheck()">
+					<br>
+					<input type="text" name="otp" ng-model="otp" class="form-control" placeholder="Enter OTP" style="width: 30%;">
+					<br>
+					<br>
+					<button type="submit" class="btn btn-primary">Download</button>
+					<br>
+					<br>
+					<p style="text-align: center;">{{Message}}</p>
+					<br>
+					<p style="text-align: center;">{{otpErrorMessage}}</p>
+					<br>
+				</form>
+				<br>
+			</div>
+
+			<div class="col-md-7">
+				<img ng-src="{{image}}" style="width: 100%; height: auto;">
+			</div>
+		</div>
+	</div>
+</div>

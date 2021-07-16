@@ -1,0 +1,50 @@
+
+<!-- <div class="col-md-4 showmore">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<input type="text" class="form-control" placeholder="Results to display"aria-label="Results to display" aria-describedby="basic-addon1" ng-model="num">
+</div>
+</div>
+<button type="button" class="btn btn-success" ng-click="showMore(num)">Apply filter
+</button>
+<button type="button" class="btn btn-warning" ng-click="showAll()">Show All</button>
+<br>
+<br>
+<div class="row show-hide-message" ng-show="showMoreError">
+<div class="alert alert-danger" role="alert">
+{{ showMoreError }}
+</div>
+</div>
+</div> -->
+
+<!-- <div class="row show-hide-message" ng-show="successMsg">
+<div class="alert alert-primary" role="alert">
+{{ successMsg }}
+</div>
+</div>
+<div class="row show-hide-message" ng-show="errorMsg">
+<div class="alert alert-danger" role="alert">
+{{ errorMsg }}
+</div>
+</div> -->
+
+<!-- <form ng-submit="postData()" encType="multipart/form-data">
+<input type="file" name="file" ng-model="file" accept="*.csv" /><br/><br/>
+<input type="submit" value="Upload File" />
+</form> -->
+
+<!-- <td>
+<button type="button" ng-click="deleteUser(loggedInUser.username)" 
+class="btn btn-danger">Delete</button>
+</td> -->
+
+<!-- <div class="matterList">
+<ul ng-repeat="matter in matters">
+<p style="font-size: 24px; font-family: 'Baloo Tamma 2', cursive;">
+{{ matter.ttsfilename }}</p>
+<hr>
+<li style="margin-top: 5px; margin-bottom: 5px;">{{ matter.text }}</li>
+<br>
+</ul>
+</div> -->
+

@@ -1,0 +1,55 @@
+
+<div class="pageWrap" ng-controller="managementCtrl" ng-show="isLoggedIn && authorized">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-5 sideNav">
+				<a ui-sref="leadAction">
+					<br>
+					<button type="button" class="btn btn-danger">Leads</button>
+				</a>
+				<br>
+				<br>
+				<ul class="nav navbar-nav">
+					<li ui-sref-active="active" ui-sref="management.callbacklead"><a>CallBack Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.websitelead"><a>Website Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.viewStudentAdmissionData">
+						<a>View Students Admission List</a>
+					</li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.marketinglead"><a>Marketing Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.uploadPortalLead"><a>Upload Portal-Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.viewPortalLeads"><a>View Portal-Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.viewUpdatedLead"><a>View Updated-Leads</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.uploadBillFormat"><a>Upload Bill-Format</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.viewBillFormat"><a>View Bill-Format</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.matterForCalling"><a>Write Matter For Calling</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.callerId"><a>Create Caller-Id</a></li>
+					<br>
+					<li ui-sref-active="active" ui-sref="management.uploadLead"><a>Upload-Lead</a></li>
+					<!-- <br>
+					<li ui-sref-active="active" ui-sref="management.createMember"><a>Create Member</a></li> -->
+					<br>
+					<li ui-sref-active="active" ui-sref="management.loggedInUsers"><a>Logged-In-Users</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-7 content">
+				<div class="container">
+					<div ui-view></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

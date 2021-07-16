@@ -1,0 +1,90 @@
+
+
+.page {
+	background: linear-gradient(#005C97, #2193b0);
+	/*padding-bottom: 20px;*/
+}
+
+.parentElement {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reqDemo h1 {
+	margin-top: 50px;
+	color: white; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+.reqDemo p {
+	color: white;
+	text-align: left;
+}
+
+.reqDemos h3 {
+	text-align: center; 
+	color: white; 
+	margin-top: 20px; 
+	font-size: 24px;
+}
+
+.reqDemos p {
+	color: yellow;
+}
+
+.form-design li {
+	color: white;
+}
+
+.form-design {
+	background: linear-gradient(#005C97, #2193b0);
+	margin-top: 75px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    border: 3px solid white;
+}
+
+.formHeader {
+	background-color: #348F50;
+	text-align: center;
+	color: #fff;
+	padding: 6px 8px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	border-radius: 7px;
+}
+
+input {
+	margin-top: 20px; 
+}
+
+.form-design button {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+hr {
+	background-color: white;
+}
+
+.vl {
+  border-left: 6px solid white;
+  height: 50px;
+  margin-top: 5px;
+}
+.vl p {
+	margin-left: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+	div.page .parentElement {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	div.page .form-design  {
+		margin-top: 15px;
+	}
+}

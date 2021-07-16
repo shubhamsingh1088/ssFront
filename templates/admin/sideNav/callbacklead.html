@@ -1,0 +1,67 @@
+
+<div class="customerList">
+	<div class="row">
+
+		<!-- <div class="col-md-4">
+			<p>Select TTS-Call</p>
+			<select name="matters" id="matters" ng-model="matters.model">
+				<option ng-repeat="option in matters.availableOptions"
+				value="{{option.text}}">{{ option.ttsfilename }}</option>
+			</select>
+			<br>
+			<br>
+			<p ng-repeat="option in matters.availableOptions">{{ matters.model }}</p>
+			<br>
+		</div>
+
+		<div class="col-md-4">
+			<p>Select Called-Id</p>
+			<select name="callerids" id="callerids" ng-model="callerids.model">
+				<option ng-repeat="option in callerids.availableOptions"
+				value="{{option.number}}">{{ option.number }}</option>
+			</select>
+		</div>
+
+		<div class="col-md-4">
+			<p>Select Trade</p>
+			<select name="trade" id="trade" ng-model="trade.model">
+				<option ng-repeat="option in trade.availableOptions" value="{{option.name}}">
+				{{ option.name }}</option>
+			</select>
+			<br>
+			<br>
+		</div>
+	</div> -->
+
+	<div class="row custTable">
+		<div class="col-md-12">
+			<input ng-model="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+			 style="width: 50%;">
+			<br>
+			<br>
+			<!-- <button class="btn btn-danger" ng-click="deleteFileUploads()">Delete all uploads</button>
+			<br>
+			<br> -->
+			<div class="managementTable">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Name</th>
+							<th>Number</th>
+							<th>Trade</th>
+							<th>Demo-Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="forwardLead in forwardLeads | limitTo: limit | filter:query">
+							<td>{{forwardLead.name}}</td>
+							<td>{{forwardLead.number}}</td>
+							<td>{{forwardLead.trade}}</td>
+							<td>{{forwardLead.demoDate}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="customerList" style="margin-top: 20px;">
+	<div class="table-responsive-sm">
+		<table class="table table-bordered">
+			<thead class="thead-dark">
+				<tr>
+					<th>Name</th>
+					<th>E-mail</th>
+					<th>Number</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="loggedInUser in loggedInUsers">
+					<td>{{loggedInUser.username}}</td>
+					<td>{{loggedInUser.email}}</td>
+					<td>{{loggedInUser.number}}</td>
+					<td>
+						<button type="button" ng-click="deleteUser(loggedInUser.username)"
+						class="btn btn-danger">Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="row show-hide-message" ng-show="successMsg">
+	<div class="alert alert-primary" role="alert">
+		{{ successMsg }}
+	</div>
+</div>
+<div class="row show-hide-message" ng-show="errorMsg">
+	<div class="alert alert-danger" role="alert">
+		{{ errorMsg }}
+	</div>
+</div>

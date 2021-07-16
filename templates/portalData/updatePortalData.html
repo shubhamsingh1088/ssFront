@@ -1,0 +1,42 @@
+
+<div class="updatePortalForm" ng-controller="updatePortalFormController">
+	<div class="container">
+		<form ng-submit="updatePortalForm()">
+			<div class="row">
+				<div class="col-md-6">
+					<input type="text" name="name" placeholder="name" ng-value="singleDataName" class="form-control" required>
+					<br>
+					<input type="text" name="number" placeholder="number" ng-value="singleDataNumber" class="form-control" required>
+					<br>
+					<input type="text" name="address" placeholder="Customer Address" ng-model="address" class="form-control">
+					<br>
+					<br>
+					<label for="trade"><strong>Trade:</strong></label>
+					<br>
+					<select name="trade" id="trade" ng-model="trade.model">
+						<option ng-repeat="option in trade.availableOptions" value="{{option.name}}">{{ option.name }}</option>
+					</select>
+					<br>
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="businessType" placeholder="BusinessType" ng-model="businessType"
+					class="form-control">
+					<br>
+					<input type="date" name="demo" placeholder="Demo Date" ng-model="demoDate"
+					style="width: 100%; padding-bottom: 7px; padding-top: 7px;">
+					<br>
+					<input type="text" name="represantativeName" placeholder="Represantative Name"
+					ng-value="Username" class="form-control" required>
+					<br>
+					<input type="text" name="represantativeNumber" placeholder="Represantative Number"
+					ng-value="Number" class="form-control" required>
+					<br>
+					<br>
+					<textarea name="remarks" placeholder="Remarks" ng-model="remarks" class="form-control"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 5px;">Submit</button>
+				<p style="text-align: center;">{{message}}</p>
+			</div>
+		</form>
+	</div>
+</div>

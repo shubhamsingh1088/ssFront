@@ -1,0 +1,35 @@
+
+<div class="MarketingForm" ng-controller="MarketingFormController" style="margin-top: 50px;">
+
+	<div class="container">
+		<form action="api/marketing" method="POST" encType="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6" style="display: block; margin-left: auto; margin-right: auto; width: 60%;">
+					<div class="headingStyle" style="background-color: #a8dadc; border-radius: 4px; padding: 4px 6px;
+					 color: #264653;">
+						<h4 style="text-align: center;"><strong>Marketing-Form</strong></h4>
+					</div>
+					<hr>
+					<input type="text" name="name" class="form-control" placeholder="Name" required>
+					<input type="text" name="number" class="form-control" placeholder="Number" required>
+					<input type="text" name="address" class="form-control" placeholder="Address">
+					<input type="text" name="contactno" class="form-control" placeholder="Contact-No" required>
+					<input type="text" name="oldsoftware" class="form-control" placeholder="Old-Software">
+					<br>
+					<label for="trade"><strong>Trade:</strong></label>
+					<br>
+					<select name="trade" id="trade" ng-model="trade.model">
+						<option ng-repeat="option in trade.availableOptions" value="{{option.name}}">{{ option.name }}</option>
+					</select>
+					<br>
+					<br>
+					<label for="Upload-Photo"><strong>Upload-Photo:-</strong></label><br>
+					<input type="file" name="file"><br/><br/>
+					<input type="submit" class="btn btn-primary">
+				</div>
+			</div>
+		</form>
+		<br>
+	</div>
+
+</div>

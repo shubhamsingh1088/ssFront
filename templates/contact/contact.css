@@ -1,0 +1,74 @@
+
+.map {
+	margin-top: 60px;
+}
+
+.requestProp {
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(#C9D6FF, #E2E2E2);
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+.mainHeading {
+	flex: 100%;
+	text-align: center;
+	margin: 60px 0 60px 0;
+}
+.mainHeading h1 {
+	font-family: 'Baloo Tamma 2', cursive;
+}
+.mail {
+	flex: 50%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.num {
+	flex: 50%;
+	text-align: center;
+}
+.requestPropBtn {
+	flex: 100%;
+	text-align: center;
+	margin: 40px 0 50px 0;
+}
+
+
+@media only screen and (max-width: 820px) {
+	div.reqDemos {
+		margin-top: 30px;
+	}
+	div.map {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	div.reqDemos {
+		margin-top: 20px;
+	}
+	div.map {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	div.reqDemos {
+		margin-top: 10px;
+	}
+	div.map {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	div.reqDemos {
+		margin-top: 6px;
+	}
+	div.map {
+		margin-top: 6px;
+	}
+}

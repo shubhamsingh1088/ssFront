@@ -1,0 +1,82 @@
+<br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<form ng-submit="assignLead()" style="float: right;">
+				<select name="selectedLead" id="selectedLead.model" ng-model="selectedLead.model">
+					<option ng-repeat="option in selectedLead.availableOptions" value="{{option.value}}">{{ option.value }}
+					</option>
+				</select>
+				<select name="telecaller" id="telecaller.model" ng-model="telecaller.model">
+					<option ng-repeat="option in telecaller.availableOptions | filter:query" value="{{option._id}}">
+						{{ option.username }}
+					</option>
+				</select>
+				<br>
+				<br>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<br>
+				<br>
+			</form>
+		</div>
+	</div>
+</div>
+
+<h2 style="margin-top: 10px;">Portal-Leads</h2>
+<input ng-model="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+style="width: 50%;">
+<br>
+<p>Total Leads:- {{portalDatas.length}}</p>
+<div class="table-responsive-sm">
+	<table class="table table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Trade</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="portalData in portalDatas | filter:query">
+				<td>{{portalData.name}}</td>
+				<td>{{portalData.number}}</td>
+				<td>{{portalData.trade}}</td>
+				<td>
+					<button type="button" class="btn btn-danger" ng-click="deletePortalLead(portalData._id)">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h2 style="margin-top: 50px;">Assigned-Leads</h2>
+<input ng-model="newquery" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+style="width: 50%;">
+<br>
+<p>Total Leads:- {{allAssignedLeads.length}}</p>
+<div class="table-responsive-sm">
+	<table class="table table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Trade</th>
+				<th>Telecaller-Name</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody ng-repeat="allAssignedLead in allAssignedLeads">
+			<tr ng-repeat="n in allAssignedLead.portalDatas | filter: newquery">
+				<td>{{n.name}}</td>
+				<td>{{n.number}}</td>
+				<td>{{n.trade}}</td>
+				<td>{{allAssignedLead.userId}}</td>
+				<td>
+					<button type="button" class="btn btn-danger" ng-click="deletePortalLead(allAssignedLead._id)">Delete
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

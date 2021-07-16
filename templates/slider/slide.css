@@ -1,0 +1,32 @@
+
+.slide {
+	background: linear-gradient(70deg, #bde0fe 20%, #f1faee 50%);
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.slide p {
+	text-align: center; font-size: 19px; font-family: 'Raleway', sans-serif; color: #242423;
+}
+
+.slider {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+source {
+	display: block;
+	margin: 0;
+	width: 800px;
+	height: 600px;
+}
+
+@media only screen and (max-width: 720px) {
+	div.slide p {
+		text-align: justify;
+		font-size: 19px;
+		font-family: 'Raleway', sans-serif;
+		color: #242423;
+	}
+}

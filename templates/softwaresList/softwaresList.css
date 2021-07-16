@@ -1,0 +1,46 @@
+
+.softwaresList {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.softwaresList h1 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+}
+
+.card-body h5 {
+	text-align: center;
+	/*font-weight: bold;*/
+	font-family: 'Baloo Tamma 2', cursive;
+}
+
+.softwaresList .card {
+	margin-bottom: 2px;
+}
+
+#middleImage {
+	width: 335px; height: 200px; display: block; margin-left: auto; margin-right: auto; margin-top: 10px;
+}
+
+.softwaresList .list-group a {
+	text-decoration: none;
+}
+.softwaresList .list-group li:hover {
+	background-color: #e63946;
+	list-style-type: none;
+	color: #f1faee;
+}
+
+@media only screen and (max-width: 720px) {
+	div.softwaresList {
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+	#middleImage {
+		width: 280px;
+		height: 175px;
+	}
+	div.softwaresList div.card {
+		margin-bottom: 50px;
+	}
+}

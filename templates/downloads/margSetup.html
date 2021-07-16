@@ -1,0 +1,57 @@
+
+<div class="margSetupForImg">
+	<div class="margSetup" ng-controller="margSetupDownload">
+		<div class="container">
+			<h2 style="color: #f2f2f2; font-family: 'Baloo Tamma 2', cursive; margin-top: 60px;">Download 
+				<span style="color: #f3f3f3;">Setup</span>
+			</h2>
+			<p>In order to download your preferred software, please fill this information form.<br>
+			 All fields are required to get access of the software and its features.<br> Your privacy is important to us.
+			 We will not share your contact information<br> with any external parties.</p>
+			 <div class="row">
+				<div class="col-lg-8 leftForm">
+					<div class="form-designs">
+						<div class="container">
+							<form name="regForm" ng-submit="register(regForm.$valid)" novalidate>
+								<input type="text" class="form-control" name="number" placeholder="Mobile" min="10" max="10"
+								name="number"ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="number" ng-disabled="disabled" required><br>
+								<p style="color: #4682B4;" ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)">*This field is required</p>
+
+								<input type="text" class="form-control" name="name" placeholder="Your Name" ng-model="name" 
+								ng-disabled="disabled" ng-minlength="3" ng-maxlength="20" required><br>
+								<p style="color: #4682B4;" ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)">*This field is required</p>
+								<ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+									<li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+								</ul>
+
+								<input type="text" class="form-control" name="pincode" placeholder="Pin-code" ng-minlength="6" 
+								ng-maxlength="6" ng-model="pincode" ng-disabled="disabled" required><br>
+								<p style="color: #4682B4;" ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)">*This field is required</p>
+								<ul class="text-muted" ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.minlength) || (!regForm.pincode.$pristine && regForm.pincode.$error.maxlength)">
+									<li style="margin-top: 30px;">Your pin-code Must be atleast 6 characters long..</li>
+								</ul>
+
+								<div class="container">
+									<div class="row show-hide-message" ng-show="successMsg">
+										<div class="alert alert-success" role="alert">
+											{{ successMsg }}
+										</div>
+									</div>
+									<div class="row show-hide-message" ng-show="msg">
+										<div class="alert alert-danger" role="alert">
+											{{ msg }}
+										</div>
+									</div>
+								</div>
+								<br>
+								<button type="submit" class="btn btn-warning btn-lg" style="width: 100%;">Download</button>
+								<br>
+								<br>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

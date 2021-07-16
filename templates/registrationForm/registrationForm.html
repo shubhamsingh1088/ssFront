@@ -1,0 +1,44 @@
+
+<div style="background-color: #a8dadc;"></div>
+<div class="registrationForm" ng-controller="registrationForm" style="background-color: #a8dadc;">
+	<div class="container">
+		<form ng-submit="submitRegForm()">
+			<div class="row">
+				<div class="col-md-6" style="display: block; margin-left: auto; margin-right: auto; width: 60%;">
+					<div class="headingStyle" style="background-color: #a8dadc; border-radius: 4px; padding: 4px 6px;
+					 color: #264653;">
+					 <br>
+					 <br>
+					 <h4 style="text-align: center;"><strong>Registration Details</strong></h4>
+					</div>
+					<hr>
+					<input type="text" name="cname" ng-model="cName" class="form-control" placeholder="Company Name" required>
+					<input type="text" name="number" ng-model="number" class="form-control" placeholder="Mob-Number" required>
+					<input type="text" name="address" ng-model="address" class="form-control" placeholder="Address" required>
+					<input type="text" name="serialno" ng-model="serialno" class="form-control" placeholder="Serial-No"
+					 required>
+					<input type="text" name="finalamount" ng-model="finalAmount" class="form-control" placeholder="Final-Amount" required>
+					<!-- <br>
+					<label for="trade"><strong>Trade:</strong></label>
+					<br>
+					<select name="trade" id="trade" ng-model="trade.model">
+						<option ng-repeat="option in trade.availableOptions" value="{{option.name}}">{{ option.name }}</option>
+					</select> -->
+					<br>
+					<input type="submit" class="btn btn-primary">
+				</div>
+			</div>
+		</form>
+		<br>
+		<div class="container-fluid">
+			<p>{{msg}}</p>
+		</div>
+		<!-- <div>
+			<ul ng-repeat="n in registrationFormDatas">
+				<li>n.cName</li>
+				<li>n.number</li>
+
+			</ul>
+		</div> -->
+	</div>
+</div>

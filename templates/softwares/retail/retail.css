@@ -1,0 +1,163 @@
+
+
+
+.retail {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.retail h2 {
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.retail p {
+	font-size: 18px;
+	font-family: 'Baloo Tamma 2', cursive;
+	color: #4682B4;
+}
+
+.features {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.centerForm {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+.sefeqwfs {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sefeqwf p {
+	font-family: 'Baloo Tamma 2', cursive;
+}
+.sefeqwf h4 {
+	font-family: 'Kumbh Sans', sans-serif;
+	color: #3d405b;
+}
+.sefeqwf span {
+	color: #2a9d8f;
+}
+
+.sdefefImage {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.videoDescription {
+	margin-top: 20px;
+	padding-top: 60px;
+	margin-bottom: 80px;
+	/*padding-bottom: 20px;*/
+	/*background-image: url("softwares-video-flag.svg");
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	background: linear-gradient(70deg, #f1faee 50%, #f1faee 50%);
+}
+
+.softwareFeatures h1 {
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Baloo Tamma 2', cursive;
+}
+
+.restaurent h1 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	color: #264653;
+}
+.restaurent p {
+	color: #264653;
+	text-align: center;
+	font-size: 19px;
+}
+
+.distribution h1 {
+	text-align: center; font-family: 'Baloo Tamma 2', cursive; color: #264653;
+}
+.distribution p {
+	color: #264653; text-align: center; font-size: 19px;
+}
+
+.manufacturing h1 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	color: #264653;
+}
+.manufacturing p {
+	text-align: center;
+	color: #264653;
+	font-size: 19px;
+}
+
+.sefeqwf .landing-below h2 {
+	color: #264653;
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	font-size: 40px;
+}
+
+/*@media only screen and (max-width: 720px) {
+	div.sdefefImage {
+		display: none;
+	}
+	div.sefeqwf {
+		display: none;
+	}
+}
+*/
+@media only screen and (max-width: 800px) {
+	div.centerForm {
+		width: 100%;
+	}
+	div.restaurent h1 {
+		text-align: left;
+		font-family: 'EB Garamond', serif;
+	}
+	div.restaurent p {
+		text-align: left;
+	}
+	div.distribution h1 {
+		text-align: left; font-family: 'Baloo Tamma 2', cursive; color: #264653;
+	}
+	div.distribution p {
+		color: #264653; text-align: left; font-size: 19px;
+	}
+	div.manufacturing h1 {
+		text-align: left; font-family: 'Baloo Tamma 2', cursive; color: #264653;
+	}
+	div.manufacturing p {
+		color: #264653; text-align: left; font-size: 19px;
+	}
+	div.sefeqwf .landing-below h2 {
+		color: #264653;
+		text-align: left;
+		font-family: 'EB Garamond', serif;
+		margin-top: 1px;
+		margin-bottom: 20px;
+		font-size: 38px;
+	}
+	/*div.sdefefImage {
+		display: none;
+	}
+	div.sefeqwf {
+		display: none;
+	}*/
+	div.retail h2 {
+		font-size: 21px;
+	}
+	div.retail p {
+		text-align: center;
+		font-size: 16px;
+	}
+}

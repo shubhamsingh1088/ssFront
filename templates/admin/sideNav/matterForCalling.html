@@ -1,0 +1,35 @@
+<div class="container" ng-show="ifUser">
+	<form ng-submit="save()">
+		<input type="text" name="ttsfilename" ng-model="ttsfilename" placeholder="Tts FileName" required>
+		<br>
+		<br>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Tts Matter</span>
+			</div>
+			<textarea class="form-control" aria-label="With textarea" ng-model="text"
+			ng-value="$scope.text"></textarea>
+		</div>
+		<br>
+		<button class="btn btn-warning" type="submit">Save</button>
+		<br>
+		<br>
+		{{msg}}
+		<br>
+		<br>
+		<br>
+	</form>
+	<div class="matterList">
+		<ul ng-repeat="option in matters.availableOptions">
+			<p style="font-size: 24px; font-family: 'Baloo Tamma 2', cursive;">
+				{{ option.ttsfilename }}
+			</p>
+			<hr>
+			<li style="margin-top: 5px; margin-bottom: 5px;">{{ option.text }}</li>
+			<br>
+			<button class="btn btn-danger" ng-click="deleteSelectedMatter(matter.ttsfilename)">
+				Delete This Matter
+			</button>
+		</ul>
+	</div>
+</div>

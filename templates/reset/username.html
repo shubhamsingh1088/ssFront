@@ -1,0 +1,37 @@
+
+
+<div class="resetusername" ng-controller="resetUsernameCtrl">
+<div class="container">
+  <br>
+  <div class="heading">
+    <h5>Forgot Username</h5>
+  </div>
+  <br>
+  <form name="userForm" novalidate>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+         <label for="inputName4">E-mail</label>
+         <input type="text" ng-disabled="disabled" class="form-control" id="inputEmail4" placeholder="Your registered e-mail" name="email"
+         ng-model="userData.email" required>
+      </div>
+    </div>
+    <button type="button" ng-disabled="disabled" ng-click="sendUsername(userData, userForm.$valid)" class="btn btn-success">Submit</button>
+  </form>
+
+	 <br>
+      <div class="container">
+
+        <div class="row show-hide-message" ng-show="successMsg">
+          <div class="alert alert-primary" role="alert">
+            {{ successMsg }}
+          </div>
+        </div>
+
+        <div class="row show-hide-message" ng-show="errorMsg">
+          <div class="alert alert-danger" role="alert">
+            {{ errorMsg }}&nbsp
+          </div>
+        </div>
+      </div>
+</div>
+</div>

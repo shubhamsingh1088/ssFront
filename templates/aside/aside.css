@@ -1,0 +1,316 @@
+
+
+.Aside {
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.Aside h1 {
+  text-align: center;
+  font-size: 64px;
+}
+.Aside h2 {
+  text-align: center;
+  font-size: 64px;
+}
+
+.Aside p {
+  font-size: 35px; text-align: center; color: #333;
+}
+
+.Aside h6 {
+  text-align: center;
+  font-size: 21px;
+  color: #333;
+}
+
+.middle {
+  margin-bottom: 70px;
+}
+
+.middle h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+.midRow p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.middleMid h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.midAside p {
+  text-align: center;
+}
+
+.middleBelow {
+  margin-top: 50px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.middleBelow p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.middleBelow, .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.parentEle {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parentElem {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.childOne {
+  flex: 15%;
+}
+.childTwo {
+  flex: 15%;
+}
+.childThree {
+  flex: 15%;
+}
+.childFour {
+  flex: 15%;
+}
+.childFive {
+  flex: 15%;
+}
+.childSix {
+  flex: 15%;
+}
+
+.child1 {
+  flex: 15%;
+}
+.child2 {
+  flex: 15%;
+}
+.child3 {
+  flex: 15%;
+}
+.child4 {
+  flex: 15%;
+}
+.child5 {
+  flex: 15%;
+}
+.child6 {
+  flex: 15%;
+}
+/*.child7 {
+  flex: 25%;
+}
+.child8 {
+  flex: 25%;
+}*/
+
+@media only screen and (max-width: 720px) and (max-width: 600px), and (max-width: 420px), and (max-width: 320px) {
+  div.Aside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div.Aside h1 {
+    text-align: center;
+    font-size: 44px;
+  }
+   div.Aside h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  div.Aside .asideLeft p {
+    display: none;
+  }
+  div.middle h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  div.childOne {
+    flex: 10%;
+  }
+  div.childTwo {
+    flex: 10%;
+  }
+  div.childThree {
+    flex: 10%;
+  }
+  div.childFour {
+    flex: 10%;
+  }
+  div.childFive {
+    flex: 10%;
+  }
+  div.childSix {
+    flex: 10%;
+  }
+  div.child1 {
+    flex: 50%;
+  }
+  div.child2 {
+    flex: 50%;
+  }
+  div.child3 {
+    flex: 50%;
+  }
+  div.child4 {
+    flex: 50%;
+  }
+  div.child5 {
+    flex: 50%;
+  }
+  div.child6 {
+    flex: 50%;
+  }
+  /*div.child7 {
+    flex: 50%;
+  }
+  div.child8 {
+    flex: 50%;
+  }*/
+}
+
+/*@media only screen and (max-width: 600px) {
+  div.Aside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div.Aside h1 {
+    text-align: center;
+    font-size: 44px;
+  }
+   div.Aside h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  div.Aside .asideLeft p {
+    display: none;
+  }
+  div.middle h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  div.childOne {
+    flex: 10%;
+  }
+  div.childTwo {
+    flex: 10%;
+  }
+  div.childThree {
+    flex: 10%;
+  }
+  div.childFour {
+    flex: 10%;
+  }
+  div.childFive {
+    flex: 10%;
+  }
+  div.childSix {
+    flex: 10%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  div.Aside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div.Aside h1 {
+    text-align: center;
+    font-size: 44px;
+  }
+   div.Aside h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  div.Aside .asideLeft p {
+    display: none;
+  }
+  div.middle h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  div.childOne {
+    flex: 10%;
+  }
+  div.childTwo {
+    flex: 10%;
+  }
+  div.childThree {
+    flex: 10%;
+  }
+  div.childFour {
+    flex: 10%;
+  }
+  div.childFive {
+    flex: 10%;
+  }
+  div.childSix {
+    flex: 10%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  div.Aside {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  div.Aside h1 {
+    text-align: center;
+    font-size: 44px;
+  }
+   div.Aside h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  div.Aside .asideLeft p {
+    display: none;
+  }
+  div.middle h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  div.childOne {
+    flex: 10%;
+  }
+  div.childTwo {
+    flex: 10%;
+  }
+  div.childThree {
+    flex: 10%;
+  }
+  div.childFour {
+    flex: 10%;
+  }
+  div.childFive {
+    flex: 10%;
+  }
+  div.childSix {
+    flex: 10%;
+  }
+}*/

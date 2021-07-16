@@ -1,0 +1,70 @@
+
+<div class="signup" ng-controller="signup">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-7">
+        <!-- <h2>Whatever</h2> -->
+      </div>
+      <div class="col-md-5">
+        <div class="signupForm">
+          <div class="formsHead">SignUp Form</div>
+          <div class="container">
+            <form name="regForm" ng-submit="addUser(regData, regForm.$valid, confirmed)" novalidate>
+
+              <input type="email" ng-disabled="disabled" class="form-control" name="email" placeholder="Email" ng-model="regData.email" ng-minlength="3" ng-maxlength="55" ng-pattern="/^\w+@[a-zA-z_]+?\.[a-zA-z]{2,3}$/" required>
+              <p ng-show="(!regForm.email.$pristine && regForm.email.$error.required) || (regForm.$submitted && regForm.email.$error.required)">*This field is required</p>
+              <ul style="color: red;" ng-show="(!regForm.email.$pristine && regForm.email.$error.pattern) || (!regForm.email.$pristine && regForm.email.$error.minlength) || (!regForm.email.$pristine && regForm.email.$error.maxlength)">
+                <li style="color: white;">Must contain "@"</li>
+                <li style="color: white;">Must not contain any special characters</li>
+              </ul>
+
+              <input type="text" ng-disabled="disabled" class="form-control" name="username" placeholder="Username" 
+              ng-model="regData.username" 
+              ng-minlength="3" ng-maxlength="25" ng-pattern="/^(?!.*?[\W])(?=.*?[a-zA-z]|=.*?[A-Z]).{3,16}$/" required>
+              <p ng-show="(!regForm.username.$pristine && regForm.username.$error.required) || (regForm.$submitted && regForm.username.$error.required)">*This field is required</p>
+              <ul style="color: red;" ng-show="(!regForm.username.$pristine && regForm.username.$error.pattern) || (!regForm.username.$pristine && regForm.username.$error.minlength) || (!regForm.username.$pristine && regForm.username.$error.maxlength)">
+                <li style="color: white;">Must not contain any special characters or spaces</li>
+                <li style="color: white;">Must be atleast 3 characters but no more than 25</li>
+              </ul>
+
+              <input type="password" ng-disabled="disabled" class="form-control" name="firstPassword" placeholder="Password" ng-model="firstPassword" ng-minlength="4" ng-maxlength="35" required>
+              <p ng-show="(!regForm.firstPassword.$pristine && regForm.firstPassword.$error.required) || (regForm.$submitted && regForm.firstPassword.$error.required)">*This field is required</p>
+              <ul style="color: red;" ng-show="(!regForm.firstPassword.$pristine && regForm.firstPassword.$error.minlength) || (!regForm.firstPassword.$pristine && regForm.firstPassword.$error.maxlength)">
+                <li style="color: white;">Your Password Must be atleast 4 characters long but no more than 35</li>
+              </ul>
+
+              <input type="password" ng-disabled="disabled" class="form-control" name="confirmPassword" placeholder="confirm password" ng-model="confirm" match="{{[firstPassword]}}" ng-change="regData.password = confirm" required>
+              <p ng-show="(!regForm.confirmPassword.$pristine && regForm.confirmPassword.$error.required) || (regForm.$submitted && regForm.confirmPassword.$error.required)">
+              *This field is required</p>
+              <p ng-show="!confirmed && regForm.firstPassword.$valid">
+              Passwords do not match</p>
+
+              <input type="text" ng-disabled="disabled" class="form-control" placeholder="Your mobile number" min="10" max="10" name="number" ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="regData.number" required>
+              <p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || 
+              (regForm.$submitted && regForm.number.$error.required)">*This field is required</p>
+
+              <br>
+              <button type="submit" ng-disabled="disabled" class="btn btn-primary">Sign up</button>
+
+            </form>
+          </div>
+          <div class="status" style="margin: 20px;">
+            <div class="row show-hide-message" ng-show="successMsg">
+              <div class="alert alert-primary" role="alert">
+                {{ successMsg }}
+              </div>
+            </div>
+            <div class="row show-hide-message" ng-show="errorMsg">
+              <div class="alert alert-danger" role="alert">
+                {{ errorMsg }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

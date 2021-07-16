@@ -1,0 +1,106 @@
+
+.mid {
+	width: 90%; margin: 0 auto;
+}
+.mid h1 {
+	margin-bottom: 50px;
+	color: #1d3557;
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+}
+.mid h1 span {
+	color: seagreen;
+}
+.mid img {
+	width: 150px;
+	height: 150px;
+	margin-left: auto; margin-right: auto; display: block;
+}
+.mid h6 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.mid p {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.midParent {
+	display: flex;
+	flex-wrap: wrap;
+}
+.mp1 {
+	flex: 25%;
+}
+.mp2 {
+	flex: 25%;
+}
+.mp3 {
+	flex: 25%;
+}
+.mp4 {
+	flex: 25%;
+}
+.mp5 {
+	flex: 25%;
+}
+.mp6 {
+	flex: 25%;
+}
+.mp7 {
+	flex: 25%;
+}
+.mp8 {
+	flex: 25%;
+}
+.mp9 {
+	flex: 25%;
+}
+.mp10 {
+	flex: 25%;
+}
+.mp11 {
+	flex: 25%;
+}
+.mp12 {
+	flex: 25%;
+}
+
+@media only screen and (max-width: 720px) and (max-width: 600px), and (max-width: 420px), and (max-width: 320px) {
+	div.mp1 {
+		flex: 45%;
+	}
+	div.mp2 {
+		flex: 45%;
+	}
+	div.mp3 {
+		flex: 45%;
+	}
+	div.mp4 {
+		flex: 45%;
+	}
+	div.mp5 {
+		flex: 45%;
+	}
+	div.mp6 {
+		flex: 45%;
+	}
+	div.mp7 {
+		flex: 45%;
+	}
+	div.mp8 {
+		flex: 45%;
+	}
+	div.mp9 {
+		flex: 45%;
+	}
+	div.mp10 {
+		flex: 45%;
+	}
+	div.mp11 {
+		flex: 45%;
+	}
+	div.mp12 {
+		flex: 45%;
+	}
+}

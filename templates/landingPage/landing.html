@@ -1,0 +1,178 @@
+
+<div class="landing" ng-controller="formController">
+	<div class="container">
+		<img ng-src="images/lpage_ofr_bnr.jpg" class="wow pulse">
+		<div class="row landing-middle">
+			<div class="col-md-8">
+				<br>
+				<h1><span style="color: #e63946;">First time in History</span><br> Digital Collection wala Billing<br> Software<br>
+					<br>Grow by <span style="color: #e63946;">25%</span> or More</h1>
+				<br>
+				<ul>
+					<li>Manage Stock, Accounting & GST Returns</li>
+					<li><span style="color: #e63946;">Free Digital Collection</span> with Auto Reconciliation</li>
+					<ul>
+						<li>0% Service Charges</li>
+						<li>2% Customer Cashback</li>
+						<li>Lucky Draw worth <span style="color: #e63946;">₹ 25 Lakh</span></li>
+					</ul>
+					<li>Free Website worth <span style="color: #e63946;">₹ 5000</span></li>
+					<li>Free Dr. Vivek Bindra Course worth ₹ 19500 on 100 Business Strategies</li>
+					<li>Free Gift Vouchers worth <span style="color: #e63946;">₹ 25000</span></li>
+					<li>Unsecured <span style="color: #e63946;">Business Loans</span> for financing your business growth & bill payments</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<div class="newForm">
+					<div class="container">
+						<h2>Book Free Demo</h2>
+
+						<form name="regForm" ng-submit="register(regForm.$valid)" novalidate>
+							<input class="form-control" type="text" name="number" max="10" min="10" placeholder="Mobile No." ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="number" ng-disabled="disabled" required>
+							<p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)">*This field is required</p>
+
+							<input class="form-control" type="text" name="name" placeholder="Your Name" ng-model="name"
+							ng-disabled="disabled" ng-minlength="3" ng-maxlength="20" required>
+							<p ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)">*This field is required</p>
+							<ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+								<li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+							</ul>
+
+							<input class="form-control" type="text" name="pincode" placeholder="Your Area Code"
+							 ng-model="pincode" ng-disabled="disabled" required>
+							<p ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)">*This field is required</p>
+
+							<div class="container">
+								<div class="row show-hide-message" ng-show="successMsg">
+									<div class="alert alert-success" role="alert">
+										{{ successMsg }}
+									</div>
+								</div>
+								<div class="row show-hide-message" ng-show="msg">
+									<div class="alert alert-danger" role="alert">
+										{{ msg }}
+									</div>
+								</div>
+							</div>
+
+							<br>
+							<br>
+							<button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="landing-aside">
+	<div class="container">
+		<h1>Empowering Businesses, Enabling Better India Through IT</h1>
+		<br>
+		<div class="row wow fadeInUp">
+			<div class="col-md-2">
+				<img ng-src="images/landing/mi-01.svg">
+				<p><span>20 Billion+</span><br>
+					Invoices Processed<br>
+				Per Year</p>
+			</div>
+			<div class="col-md-2">
+				<img ng-src="images/landing/mi-02.svg">
+				<p><span>100 Billion$</span><br>
+					Transaction Processed<br>
+				Per Year</p>
+			</div>
+			<div class="col-md-2">
+				<img ng-src="images/landing/mi-03.svg">
+				<p><span>50% Pharma & FMCG</span><br>
+					Runs On Marg ERP<br>
+				Software</p>
+			</div>
+			<div class="col-md-2">
+				<img ng-src="images/landing/mi-04.svg">
+				<p><span>1 Million+</span><br>
+					Businesses Served<br>
+				Worldwide</p>
+			</div>
+			<div class="col-md-2">
+				<img ng-src="images/landing/mi-05.svg">
+				<p><span>850+</span><br>
+					Sales & Support<br>
+				Centers</p>
+			</div>
+			<div class="col-md-2">
+				<img ng-src="images/landing/cmmi3.svg">
+				<p><span>850+</span><br>
+					Sales & Service<br>
+				Professionals</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="landing-below">
+	<div class="container">
+		<br>
+		<h2>Why you should choose Marg ERP</h2>
+		<div class="row landingBelow">
+
+			<div class="col-md-7 leftSide wow pulse">
+				<img ng-src="images/landing/lpf_img1.svg">
+			</div>
+			<div class="col-md-5 rightSide wow fadeInUp">
+				<h4>Create GST Invoices & Bills</h4>
+				<p>Generate all types of GST Invoices, GSTR reports, E-way Bills & File GSTR1, GSTR 2, GSTR 3B, GSTR 9 directly from the software</p>
+			</div>
+
+			<div class="col-md-7 wow fadeInUp">
+				<h4>Accounting Till Balance Sheet</h4>
+				<p>Using our billing software check everything related to client like account balance, account history, invoices, quotations, payments, and cheque alerts till balance sheet</p>
+			</div>
+			<div class="col-md-5 wow pulse">
+				<img ng-src="images/landing/lpf_img2.svg">
+			</div>
+
+			<div class="col-md-7 leftSide wow pulse">
+				<img ng-src="images/landing/lpf_img3.svg">
+			</div>
+			<div class="col-md-5 rightSide wow fadeInUp">
+				<h4>Collect Payments Faster</h4>
+				<p>Make your payments, collections & reconciliation easy with free payment platform MargPay</p>
+				<ul>
+					<li>2% Cashback for Retailers on every payment through Paytm UPI</li>
+					<li>0% Service Charges for Distributors</li>
+					<li>No Card Swipe Machine Rent</li>
+					<li>Win Lucky Draw Prizes worth Rs. 25 Lakh & more offers</li>
+				</ul>
+			</div>
+
+			<div class="col-md-7 wow fadeInUp">
+				<h4 style="margin-top: 140px;">Salesman & Retailer Order App</h4>
+				<p>Live Stock, Schemes, Price before placing order. Bill Preview with Shortage. Manage Credits with Online Payments.</p>
+			</div>
+			<div class="col-md-5 wow pulse">
+				<img ng-src="images/landing/lpf_img4.svg" style="width: 100%; height: auto;">
+			</div>
+
+			<div class="col-md-7 leftSide wow pulse">
+				<img ng-src="images/landing/lpf_img5.svg">
+			</div>
+			<div class="col-md-5 rightSide wow fadeInUp">
+				<h4 style="margin-top: 100px;">Free Website (Go Digital)</h4>
+				<p>Take your Business Online. Reach more customers with Free personalized website worth ₹ 5000. Set up your online store, create digital catalogues & ‘Go Digital’</p>
+			</div>
+
+			<div class="col-md-7 wow fadeInUp">
+				<br>
+				<br>
+				<h4>Free Gift Vouchers worth ₹ 25,000</h4>
+				<p>Get free Gift Vouchers worth ₹ 25,000/- of 25+ Brands like Myntra, Arrow, Fusion Beats, Kaya, Kalyan Jewellers, Flying Machine, Oven Story etc. Grab the best deals from top retailers to continue saving more!</p>
+			</div>
+			<div class="col-md-5 wow pulse">
+				<img ng-src="images/landing/lpf_img8.svg" style="width: 100%; height: auto;">
+			</div>
+
+		</div>
+	</div>
+</div>

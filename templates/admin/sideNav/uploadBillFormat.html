@@ -1,0 +1,22 @@
+
+<div class="container" style="margin-top: 80px;" ng-controller="managementCtrl" ng-show="ifUser">
+	<form action="/api/billFormat" method="POST" encType="multipart/form-data">
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" class="form-control" name="name" placeholder="Name">
+				<br>
+				<strong>Select-DBF File</strong>
+				<br>
+				<input type="file" name="format" />
+				<br>
+				<br>
+				<strong>Select-Image</strong>
+				<br>
+				<input type="file" name="image" />
+				<br>
+				<br>
+				<input type="submit" class="btn btn-primary">
+			</div>
+		</div>
+	</form>
+</div>

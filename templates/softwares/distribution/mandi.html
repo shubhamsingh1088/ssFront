@@ -1,0 +1,512 @@
+
+<div class="distribution" style="margin-top: 100px;">
+	<div class="container">
+		<h1>We make
+		 <span style="color: #264653;">Mandi Distribution</span> business easy<br> with Marg® Erp
+		 <span style="color: #264653;">GST Billing & filing software</span>
+		</h1>
+		<br>
+		<p>
+			Marg® Erp is a GST-ready inventory & accounting software that lets generate invoices easily, manage<br>
+			your debtors, finance, reconcile bank transactions, track batch wise inventory in very smart manner,<br>
+			generate 1000’s of reports & MIS, and file GST returns effortlessly.
+		</p>
+
+		<div class="aside-footer" style="background-color: white;">
+			<div class="container">
+				<a ui-sref="landing">
+					<img ng-src="images/lpage_ofr_bnr.jpg" class="wow pulse">
+				</a>
+				<div class="aside-footer-header">
+					<div class="container">
+						<p>Digital Collection wala Inventory & Accounting Software</p>
+					</div>
+				</div>
+				<div class="AsideForm">
+
+					<form name="regForm" ng-submit="register(regForm.$valid)" novalidate>
+						<div class="row">
+							<div class="col-md-4">
+								<input type="text" name="number" class="form-control" max="10" min="10" placeholder="Mobile No."
+								ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="number" ng-disabled="disabled" required>
+								<p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)" style="color: red;">*This field is required</p>
+							</div>
+
+							<div class="col-md-4">
+								<input type="text" name="name" class="form-control" placeholder="Your Name" ng-model="name"
+								ng-disabled="disabled" ng-minlength="3" ng-maxlength="20" required>
+								<p ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)" style="color: red;">*This field is required</p>
+								<ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+									<li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+								</ul>
+							</div>
+
+							<div class="col-md-4">
+								<input type="text" name="pincode" class="form-control" placeholder="Pincode" ng-model="pincode"
+								ng-disabled="disabled" required>
+								<p ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)" style="color: red;">*This field is required</p>
+							</div>
+
+						</div>
+						<button type="submit" class="btn btn-primary" style="margin-top: 19px;">BOOK NOW</button>
+					</form>
+
+					<div class="container">
+						<div class="row show-hide-message" ng-show="successMsg">
+							<div class="alert alert-success" role="alert">
+								{{ successMsg }}
+							</div>
+						</div>
+						<div class="row show-hide-message" ng-show="msg">
+							<div class="alert alert-danger" role="alert">
+								{{ msg }}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="videoDescription">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<video style="display: block; margin: 0 auto; width: 100%; height: auto; border-radius: 10px;" controls>
+					<source src="videos/Mandi Software For Krishi, Vegetable, Fruit, Grain Demo [Hindi].mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="landing-aside">
+		<div class="container">
+			<h1>Empowering Businesses, Enabling Better India Through IT</h1>
+			<br>
+			<div class="row wow fadeInUp">
+				<div class="col-md-2">
+					<img ng-src="images/landing/mi-01.svg">
+					<p><span>20 Billion+</span><br>
+						Invoices Processed<br>
+					Per Year</p>
+				</div>
+				<div class="col-md-2">
+					<img ng-src="images/landing/mi-02.svg">
+					<p><span>100 Billion$</span><br>
+						Transaction Processed<br>
+					Per Year</p>
+				</div>
+				<div class="col-md-2">
+					<img ng-src="images/landing/mi-03.svg">
+					<p><span>50% Pharma & FMCG</span><br>
+						Runs On Marg ERP<br>
+					Software</p>
+				</div>
+				<div class="col-md-2">
+					<img ng-src="images/landing/mi-04.svg">
+					<p><span>1 Million+</span><br>
+						Businesses Served<br>
+					Worldwide</p>
+				</div>
+				<div class="col-md-2">
+					<img ng-src="images/landing/mi-05.svg">
+					<p><span>850+</span><br>
+						Sales & Support<br>
+					Centers</p>
+				</div>
+				<div class="col-md-2">
+					<img ng-src="images/landing/cmmi3.svg">
+					<p><span>850+</span><br>
+						Sales & Service<br>
+					Professionals</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="softwareFeatures">
+		<h1>Restaurant<span style="color: #264653;"> Billing Software features at a</span> glance</h1>
+		<br>
+
+	</div> -->
+
+	<div class="sefeqwf">
+		<div class="container">
+
+			<div class="landing-below" style="background-color: white;">
+				<div class="container">
+					<br>
+					<h2>Why do businesses choose 
+					 <span style="color: seagreen;">Marg® ERP</span> to manage
+					 <span style="color: seagreen;"> Mandi</span> business?
+					</h2>
+					<div class="row landingBelow">
+
+						<div class="col-md-7 leftSide wow pulse">
+							<h4>GST <span>Compliant</span></h4>
+							<p align="justify">We send GST compliant invoices, generate financial reports, do tax calculations, 
+							and help you file your GST returns without any hassles.</p>
+						</div>
+						<div class="col-md-5 rightSide wow fadeInUp">
+							<img ng-src="images/gst-compliant.png" style="width: 70%; height: auto;">
+						</div>
+
+						<div class="col-md-5 wow pulse">
+							<img ng-src="images/easy-implementation.png" style="width: 50%; height: auto;
+							 margin-top: 45px;">
+						</div>
+						<div class="col-md-7 wow fadeInUp">
+							<h4>Easy <span>Implementation</span></h4>
+							<p align="justify">Download Marg® ERP and start billing in minutes or fill below form, and start managing your inventory accounts immediately. Our 850+ local centres will help you in implementation no matters where you are. Our 1000+ tutorial videos, updated manual and a team of 250+ customer care executives are read to make your implementation success.
+							</p>
+						</div>
+
+						<div class="col-md-7 leftSide wow fadeInUp">
+							<h4>Customi<span>zable</span></h4>
+							<p align="justify">Marg® ERP is trade specialised solution, automates your business workflows as per your need with own beautiful invoices, with our 2500+ software configuration lets you build layers of functionality to support the most unique business models</p>
+						</div>
+						<div class="col-md-5 rightSide wow pulse">
+							<img ng-src="images/customizable.png" style="width: 275px; height: 170px; margin-top: 45px;">
+						</div>
+
+						<div class="col-md-5 wow pulse">
+							<img ng-src="images/collaborative.png" style="width: 55%; height: auto; margin-top: 25px;">
+						</div>
+						<div class="col-md-7 wow fadeInUp">
+							<h4>Collabora<span>tive</span></h4>
+							<p align="justify">Marg® ERP allows you to collaborate with your supplier, You can send orders to you supplier, get invoices from our server and colleagues without additional user fees.</p>
+						</div>
+
+						<div class="col-md-7 leftSide wow fadeInUp">
+							<h4>Customer - <span>Driven Features of Marg</span></h4>
+							<p align="justify">Marg assists every businessman with its impressive features which gives him 100% control over his business with flexibility, self-customization options and time to time innovation & advancements.</p>
+						</div>
+						<div class="col-md-5 rightSide wow pulse">
+							<img ng-src="images/hiddenKey-Feature.png" style="width: 213px; height: 170px; margin-top: 45px;">
+						</div>
+
+						<div class="col-md-5 wow pulse">
+							<img ng-src="images/business-Booster.png" style="width: 226px; height: 155px; margin-top: 45px;">
+						</div>
+						<div class="col-md-7 wow fadeInUp">
+							<h4>Business <span>Booster</span></h4>
+							<p align="justify">Marg business boosters can reward your business in endless ways and gives your business an advantage to stay on top; above the competition in the market. Improve the performance of your business by taking the maximum benefit out of Marg business boosters.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="aside">
+		<br>
+		<h2>Simple and affordable pricing.</h2>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<p style="text-align: center; font-size: 23px;">Basic Edition<br><span style="color: yellow; font-size: 24px; font-style: italic;">₹ 999/-</span><br><span style="font-size: 20px; font-style: italic;">(12 Monthly EMI)</span></p>
+					<div class="box">
+						<div class="container">
+							<br>
+							<p style="font-size: 14px;">
+								( Limited Edition )<br>
+								18% GST Inclusive<br>
+								1 User Full Rights<br>
+								( ₹ 2500/- per extra user )<br>
+								( Maximum 2 users )<br>
+								*T&C Apply
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<p style="text-align: center; font-size: 23px;">Basic Edition<br><span style="color: yellow; font-size: 24px; font-style: italic;">₹ 8100/-</span><br><span style="font-size: 20px; font-style: italic;">(Yearly)</span></p>
+					<div class="box">
+						<div class="container">
+							<br>
+							<p style="font-size: 14px;">
+								( Limited Edition )<br>
+								18% GST Extra<br>
+								1 User Full Rights<br>
+								( ₹ 2500/- per extra user )<br>
+								Maximum 2 users )
+								<br>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<p style="text-align: center; font-size: 23px;">Silver Edition<br><span style="color: yellow; font-size: 24px; font-style: italic;">₹ 12600/-</span><br><span style="font-size: 20px; font-style: italic;">(Yearly)</span></p>
+					<div class="box">
+						<div class="container">
+							<br>
+							<p style="font-size: 14px;">
+								18% GST Extra<br>
+								1 User Full Rights<br>
+								1 User for View only<br>
+								( ₹ 2500/- per extra user )
+								<br>
+								<br>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<p style="text-align: center; font-size: 23px;">Gold Edition<br><span style="color: yellow; font-size: 24px; 
+					font-style: italic;">₹ 25200/-</span><br><span style="font-size: 20px; font-style: italic;">(Yearly)</span></p>
+					<div class="box">
+						<div class="container">
+							<br>
+							<p style="font-size: 14px;">
+								18% GST Extra<br>
+								Unlimited Users<br>
+								<br>
+								<br>
+								<br>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="below">
+		<br>
+		<h2>Marg® Erp integrated Mobile Apps</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img ng-src="images/download.png" class="wow flash" ng-click="viewERetail()" style="cursor: pointer;">
+					<p>eRetail<br><span>For Retail Customers</span></p>
+				</div>
+				<div class="col-md-4">
+					<img ng-src="images/download.png" class="wow flash" ng-click="viewEOrder()" style="cursor: pointer;">
+					<p>eOrder<br><span>For Field Salesman</span></p>
+				</div>
+				<div class="col-md-4">
+					<img ng-src="images/download.png" class="wow flash" ng-click="viewEOwner()" style="cursor: pointer;">
+					<p>eOwner<br><span>For Owner</span></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+
+	<div class="below-content" ng-show="showERetail">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" style="margin-top: 20px;">
+					<h1 style="text-align: center;">Marg eRetail App</h1>
+					<img ng-src="images/apps/14690.jpeg" style="width: 285px; height: 500px; margin-bottom: 60px; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.4); border-radius: 5px;">
+				</div>
+				<div class="col-md-7" style="margin-left: 40px;">
+					<h1>Marg eRetail App<span style="font-size: 22px;"> for Retailers to place orders</span></h1>
+
+					<p>eRetail is a cloud-based Android & iOS Mobile App solution designed specifically for Retail Chains & Stores (C&F’s stores, retailers working in sales and product ordering), which automates the order process without involving the need for manual intervention.</p>
+
+					<p>Marg eRetail App help retailers in placing orders to their suppliers, track their short supplies & offers, stock rate, schemes, outstanding & invoices all at one place with much ease. Also, retailers can add products in the cart for future purchases.</p>
+
+					<h4>Features of eRetail app</h4>
+					<ul>
+						<li><span>Placing order:</span> Place orders to your nearby/registered suppliers anytime anywhere</li>
+						<li><span>Order Tracking & Dispatches:</span> Track the status of orders placed, bills generated, dispatches & short supplies</li>
+						<li><span>Stock:</span> View and compare multiple distributor stock rate, deals, & schemes</li>
+						<li><span>Invoices:</span> Check invoices from all your distributors at one place</li>
+						<li><span>Ledger:</span> Checkout ledger balance, outstanding & PDC</li>
+						<li><span>Tax Summary:</span> Get Tax Statement Reconciliation & Summaries</li>
+					</ul>
+					<div class="googleplay">
+						<img ng-src="images/Google_play.png">
+					</div>
+					<br>
+					<p style="color: #2d6a4f; font-size: 21px;">For queries related to Mobile Apps</p>
+					<hr>
+					<div class="row">
+						<div class="col-md-4">
+							<p><strong>Missed Call</strong><br>
+							7771012366</p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>Support No.</strong><br>
+							91-9826153619 </p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>support email id</strong><br>
+							softwaresolution708@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="below-content" ng-show="showEOrder">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" style="margin-top: 20px;">
+					<h1 style="text-align: center;">Marg eOrder App</h1>
+					<img ng-src="images/apps/unnamed (1).png" style="width: 246px; height: 500px; margin-bottom: 60px; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.4); border-radius: 35px;">
+				</div>
+				<div class="col-md-7" style="margin-left: 40px;">
+					<h1>Marg eOrder App<span style="font-size: 22px;"> for taking orders by salesman</span></h1>
+
+					<p>Marg eOrder App is packed with numerous features which can benefit distributors/suppliers in performing their business operations like an automated collection of orders & payments, instant information of stock details, push-sale and on-spot acknowledgement.
+					</p>
+
+					<h4>Customer-driven features of eOrder App:</h4>
+					<ul>
+						<li><span>Ordering:</span> Order placed by the salesman appears immediately on Marg ERP</li>
+						<li><span>Collection:</span> Direct collection of payments from retailers with date, time and outstanding details
+						</li>
+						<li><span>Stock:</span> Access to real-time stock with relevant information like product rate and schemes</li>
+						<li><span>Location:</span> Marg Salesman App can locate retailers with ease</li>
+						<li><span>Multiple company provision</span></li>
+					</ul>
+					<div class="googleplay">
+						<img ng-src="images/Google_play.png">
+					</div>
+					<br>
+					<p style="color: #2d6a4f; font-size: 21px;">For queries related to Mobile Apps</p>
+					<hr>
+					<div class="row">
+						<div class="col-md-4">
+							<p><strong>Missed Call</strong><br>
+							7771012366</p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>Support No.</strong><br>
+							91-9826153619 </p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>support email id</strong><br>
+							softwaresolution708@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="below-content" ng-show="showEOwner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" style="margin-top: 20px;">
+					<h1 style="text-align: center;">Marg eOwner App</h1>
+					<img ng-src="images/apps/unnamed.png" style="width: 246px; height: 500px; margin-bottom: 60px; display:
+					block; margin-left: auto; margin-right: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.4); border-radius: 35px;">
+				</div>
+				<div class="col-md-7" style="margin-left: 40px;">
+					<h1>Marg eOwner App<span style="font-size: 22px;"><br> to keep complete track of your business</span></h1>
+
+					<p>eOwner keeps a strong vigilance on your business and is a perfect Management app for entrepreneurs (Retailers, Distributors & C&F's). The app keeps eyes on Sales, Collection & GPS tracking of field staff which guarantees an increase in the sales revenue which influences on time business decision making power and assures 100% business success.</p>
+
+					<p>eOwner is a cloud based system integrated with MARG ERP 9+ which provide real time information for businesses to take an instant business decision.The eOwner app allows you to manage multiple businesses at one go and gives an in-depth analysis of your inventory.</p>
+
+					<h4>The features of eOwner app</h4>
+					<ul>
+						<li><span>Field staff tracking:</span> Easy tracking of field staff</li>
+						<li><span>Stock:</span> In-depth analysis of stock details</li>
+						<li><span>Outstanding:</span> Clear overview of clients outstanding any time</li>
+						<li><span>Purchase order:</span> Easy modification of purchase orders</li>
+						<li><span>Financial reports:</span> Keep eye on accounting activities</li>
+						<li><span>Easy to use:</span> Adaptable or feasible in nature</li>
+					</ul>
+					<div class="googleplay">
+						<img ng-src="images/Google_play.png">
+					</div>
+					<br>
+					<p style="color: #2d6a4f; font-size: 21px;">For queries related to Mobile Apps</p>
+					<hr>
+					<div class="row">
+						<div class="col-md-4">
+							<p><strong>Missed Call</strong><br>
+							7771012366</p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>Support No.</strong><br>
+							91-9826153619 </p>
+						</div>
+						<div class="col-md-4">
+							<p><strong>support email id</strong><br>
+							softwaresolution708@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="aside-footer" style="background-color: white;">
+		<div class="container">
+			<a ui-sref="landing">
+				<img ng-src="images/lpage_ofr_bnr.jpg" class="wow pulse">
+			</a>
+			<div class="aside-footer-header">
+				<div class="container">
+					<p>Digital Collection wala Inventory & Accounting Software</p>
+				</div>
+			</div>
+			<div class="AsideForm">
+
+				<form name="regForm" ng-submit="register(regForm.$valid)" novalidate>
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" name="number" class="form-control" max="10" min="10" placeholder="Mobile No."
+							ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="number" ng-disabled="disabled" required>
+							<p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)" style="color: red;">*This field is required</p>
+						</div>
+
+						<div class="col-md-4">
+							<input type="text" name="name" class="form-control" placeholder="Your Name" ng-model="name"
+							ng-disabled="disabled" ng-minlength="3" ng-maxlength="20" required>
+							<p ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)" style="color: red;">*This field is required</p>
+							<ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+								<li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<input type="text" name="pincode" class="form-control" placeholder="Pincode" ng-model="pincode"
+							ng-disabled="disabled" required>
+							<p ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)" style="color: red;">*This field is required</p>
+						</div>
+
+					</div>
+					<button type="submit" class="btn btn-primary" style="margin-top: 19px;">BOOK NOW</button>
+				</form>
+
+				<div class="container">
+					<div class="row show-hide-message" ng-show="successMsg">
+						<div class="alert alert-success" role="alert">
+							{{ successMsg }}
+						</div>
+					</div>
+					<div class="row show-hide-message" ng-show="msg">
+						<div class="alert alert-danger" role="alert">
+							{{ msg }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,26 @@
+
+<div class="customerList" ng-controller="managementCtrl">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th>Name</th>
+						<th>Number</th>
+						<th>Image</th>
+						<!-- <th>Action</th> -->
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="marketing in marketings">
+						<td>{{marketing.name}}</td>
+						<td>{{marketing.number}}</td>
+						<td>
+							<img ng-src="{{marketing.image}}" style="width: 100px; height: 80px;">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

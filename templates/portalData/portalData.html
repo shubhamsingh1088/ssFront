@@ -1,0 +1,30 @@
+
+<div class="container-fluid" ng-controller="portalFormController">
+	<br>
+	<p>Total Leads:- {{assignedDatas.length}}</p>
+	<br>
+	<div class="table-responsive-sm">
+		<table class="table table-bordered">
+			<thead class="thead-dark">
+				<tr>
+					<th>Name</th>
+					<th>Number</th>
+					<th>Trade</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="assignedData in assignedDatas">
+				<tr ng-repeat="n in assignedData.portalDatas">
+					<td>{{n.name}}</td>
+					<td>{{n.number}}</td>
+					<td>{{n.trade}}</td>
+					<td>
+						<a ui-sref="updatePortalForm({ id:assignedData._id })">
+							<button type="button" class="btn btn-danger">Action</button>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

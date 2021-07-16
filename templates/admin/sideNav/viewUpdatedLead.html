@@ -1,0 +1,36 @@
+
+<br>
+<p>Total Leads:- {{updatedLead.length}}</p>
+<br>
+<input ng-model="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+style="width: 50%;">
+<br>
+<br>
+<div class="table-responsive-sm">
+	<table class="table table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Address</th>
+				<th>Trade</th>
+				<th>Telecaller-Name</th>
+				<th>Telecaller-Number</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="n in updatedLead | filter:query">
+				<td>{{n.name}}</td>
+				<td>{{n.number}}</td>
+				<td>{{n.address}}</td>
+				<td>{{n.trade}}</td>
+				<td>{{n.represantativeName}}</td>
+				<td>{{n.represantativeNumber}}</td>
+				<td>
+					<button type="button" class="btn btn-danger" ng-click="deletePortalLead(updatedLead._id)">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,57 @@
+
+.margSetupForImg {
+	background-image: url("../../images/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+
+.margSetup {
+	margin: auto;
+	width: 50%;
+	height: auto;
+	padding: 10px;
+}
+
+.leftForm {
+	margin: auto;
+	width: 70%;
+}
+
+.margSetup h2 {
+	text-align: center;
+	font-size: 41px;
+}
+
+.margSetup p {
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+
+.form-designs {
+	/*background: linear-gradient(#005C97, #2193b0);*/
+	margin-top: 25px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    border: 3px solid white;
+    text-align: center;
+}
+
+.form-designs p {
+	color: yellow;
+}
+
+@media only screen and (max-width: 720px) {
+	div.leftForm, .margSetup {
+		width: 100%;
+	}
+	div.margSetup p {
+		text-align: left;
+	}
+	div.margSetup h2 {
+		text-align: left;
+	}
+}

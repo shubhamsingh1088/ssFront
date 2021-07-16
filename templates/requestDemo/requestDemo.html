@@ -1,0 +1,84 @@
+
+<div class="page" ng-controller="formController">
+  <div class="container">
+
+    <div class="row parentElement">
+
+      <div class="col-md-7 reqDemo">
+        <h1>Marg Billing Software</h1>
+        <p style="font-style: italic;">Think beyond a regular Billing Software to run your business efficiently.</p>
+        <p style="color: yellow";>Easy GST billing & filing of returns with Marg billing software</p>
+        <p>Customisable beautiful templates of invoices to impress your clients</p>
+        <p>Stay on top of your finances with powerful 1000’s of sales, purchase, inventory & accounting reports</p>
+        <p>Efficient management of products with easy to use search options and Barcodes</p>
+        <p style="color: yellow";>Auto Bank reconciliation with 140+ Banks & Online Payments with ICICI Bank through Marg ERP 
+        </p>
+        <p>Easily Generate E-Way bills from Marg software whenever required</p>
+        <p>Next-Gen Innovative Mobile Apps for Salesman, Customers & Owners</p>
+        <hr>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="vl"><p><span style="color: yellow;">10 Lakh+</span><br>Users</p></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="vl"><p><span style="color: yellow;">850+</span><br>Sales & Support Centers</p></div>
+          </div>
+          <div class="col-sm-5">
+            <div class="vl"><p><span style="color: yellow;">8500+</span><br>Sales & Service Professionals</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 reqDemos">
+        <div class="form-design">
+          <div class="container">
+            <h3>Schedule Your Free Onsite Demo</h3>
+            <div class="formHeader">Start Billing @ ₹999/-*</div>
+            <form name="regForm" ng-submit="register(regForm.$valid)" novalidate>
+
+              <input type="text" class="form-control" name="number" placeholder="Mobile" min="10" max="10"
+              name="number"ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="number" ng-disabled="disabled" required>
+              <p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)">*This field is required</p>
+              
+              <input type="text" class="form-control" name="name" placeholder="Your Name" ng-model="name" ng-disabled="disabled"
+              ng-minlength="3" ng-maxlength="20" required>
+              <p ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)">*This field is required</p>
+              <ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+                <li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+              </ul>
+
+              <input type="text" class="form-control" name="pincode" placeholder="Pin-Code" ng-model="pincode" 
+              min="6" max="6" ng-pattern="/^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$/" ng-disabled="disabled" required>
+              <p ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)">*This field is required</p>
+              <ul class="text-muted" ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.minlength) || (!regForm.pincode.$pristine && regForm.pincode.$error.maxlength)">
+                <li style="margin-top: 30px;">Your Pin-code should be 6 digits number</li>
+              </ul>
+              
+              <div class="container">
+                <div class="row show-hide-message" ng-show="successMsg">
+                  <div class="alert alert-success" role="alert">
+                    {{ successMsg }}
+                  </div>
+                </div>
+                <div class="row show-hide-message" ng-show="msg">
+                  <div class="alert alert-danger" role="alert">
+                    {{ msg }}
+                  </div>
+                </div>
+              </div>
+              <br>
+              <p style="color: yellow; font-size: 16px;">*We will schedule your demo as per your availability.</p>
+              <p style="color: yellow; font-size: 16px;">*Your privacy is important for us.</p>
+             <!--  <p style="color: yellow; font-size: 16px;">I Have read & accept T&C.</p> -->
+              <button class="btn btn-warning" ng-disabled="disabled" class="col-md-12" type="submit">
+              Get Your Free Trail</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

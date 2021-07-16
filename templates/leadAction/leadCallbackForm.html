@@ -1,0 +1,78 @@
+
+<div class="leadForm" ng-controller="leadCallbackFormController">
+	<div class="container">
+
+		<form ng-submit="callbackLead()">
+			<div class="row" style="margin-top: 80px;">
+
+				<div class="col-md-5">
+					<label for="name">Name</label>
+					<input type="text" name="name" placeholder="name" ng-model="forwardLeadName" class="form-control">
+					<br>
+
+					<label for="number">Number</label>
+					<input type="text" name="number" placeholder="number" ng-model="forwardLeadNumber" class="form-control">
+					<br>
+
+					<label for="address">Customer-Address</label>
+					<input type="text" name="address" placeholder="Customer Address" ng-model="forwardLeadAddress" 
+					class="form-control">
+					<br>
+					<br>
+					<label for="trade">Trade:</label>
+					<br>
+					<select name="trade" id="trade" ng-model="trade.model">
+						<option ng-repeat="option in trade.availableOptions" value="{{option.name}}">{{ option.name }}</option>
+					</select>
+					<br>
+					<br>
+					<label for="businessType">Business-Type</label>
+					<input type="text" name="businessType" placeholder="BusinessType" ng-model="forwardLeadBusinessType"
+					class="form-control">
+					<br>
+				</div>
+
+				<div class="col-md-5" style="margin-left: 80px;">
+					<label for="represantativeName">Representative-Name</label>
+					<input type="text" name="represantativeName" placeholder="Represantative Name" 
+					ng-model="forwardLeadRepresentativeName" class="form-control">
+					<br>
+
+					<label for="represantativeNumber">Representative-Name</label>
+					<input type="text" name="represantativeNumber" placeholder="Represantative Number" 
+					ng-model="forwardLeadRepresentativeNumber" class="form-control">
+					<br>
+
+					<label for="remarks">Remarks</label>
+					<textarea name="remarks" placeholder="Remarks" ng-model="forwardLeadRemarks" class="form-control"
+					 style="border-radius: 3px;">
+					</textarea>
+
+					<br>
+					<br>
+					<!-- <label for="date">Demo-Date</label> -->
+					<input type="date" name="demo" placeholder="Demo Date" ng-model="demoDate" class="form-control"
+					 style="padding-bottom: 7px; padding-top: 7px;">
+					<br>
+					<br>
+					<label for="select">Dispositions:</label>
+					<br>
+					<select name="disposition" id="disposition" ng-model="disposition.model">
+						<option ng-repeat="option in disposition.availableOptions" value="{{option.name}}">
+						{{ option.name }}</option>
+					</select>
+				</div>
+
+			</div>
+			<br>
+			<br>
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<br>
+			<br>
+			<p style="text-align: center; font-size: 24px; color: seagreen;">{{warning}}</p>
+			<p style="text-align: center;">{{message}}</p>
+		</form>
+
+	</div>
+</div>
+

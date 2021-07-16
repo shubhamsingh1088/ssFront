@@ -1,0 +1,30 @@
+<div class="customerList">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="table-responsive-sm">
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>Name</th>
+							<th>Number</th>
+							<th>Pin-code</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in users">
+							<td>{{user.name}}</td>
+							<td>{{user.number}}</td>
+							<td>{{user.pincode}}</td>
+							<td>
+								<a ui-sref="webLeadForm({ id:user._id })">
+									<button type="button" class="btn btn-danger">Action</button>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

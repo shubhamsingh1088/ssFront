@@ -1,0 +1,96 @@
+
+<div class="studentForm" ng-controller="studentForm">
+  <div class="container-fluid">
+    <div class="AsideForm">
+
+      <form ng-submit="registerStudent()">
+        <div class="row">
+
+          <div class="col-md-4">
+            <input type="text" name="firstName" class="form-control" placeholder="First Name" ng-model="firstName"
+            ng-minlength="3" ng-maxlength="20" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.firstName.$pristine && regForm.firstName.$error.required) || (regForm.$submitted && regForm.firstName.$error.required)" style="color: red;">*This field is required</p>
+            <ul class="text-muted" ng-show="(!regForm.firstName.$pristine && regForm.firstName.$error.minlength) || (!regForm.firstName.$pristine && regForm.firstName.$error.maxlength)">
+              <li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+            </ul> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="lastName" class="form-control" placeholder="Last Name" ng-model="lastName"
+            ng-minlength="3" ng-maxlength="20" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.lastName.$pristine && regForm.lastName.$error.required) || (regForm.$submitted && regForm.lastName.$error.required)" style="color: red;">*This field is required</p>
+            <ul class="text-muted" ng-show="(!regForm.lastName.$pristine && regForm.lastName.$error.minlength) || (!regForm.lastName.$pristine && regForm.lastName.$error.maxlength)">
+              <li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+            </ul> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="email" class="form-control" name="email" placeholder="Email"
+            ng-model="email" ng-minlength="3" ng-maxlength="55" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.email.$pristine && regForm.email.$error.required) || (regForm.$submitted && regForm.email.$error.required)" style="color: red;">*This field is required</p>
+            <ul style="color: red;" ng-show="(!regForm.email.$pristine && regForm.email.$error.pattern) || (!regForm.email.$pristine && regForm.email.$error.minlength) || (!regForm.email.$pristine && regForm.email.$error.maxlength)">
+              <li style="color: white;">Must contain "@"</li>
+              <li style="color: white;">Must not contain any special characters</li>
+            </ul> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="name" class="form-control" placeholder="Father's Name" ng-model="fatherName"
+            ng-minlength="3" ng-maxlength="20" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.name.$pristine && regForm.name.$error.required) || (regForm.$submitted && regForm.name.$error.required)" style="color: red;">*This field is required</p>
+            <ul class="text-muted" ng-show="(!regForm.name.$pristine && regForm.name.$error.minlength) || (!regForm.name.$pristine && regForm.name.$error.maxlength)">
+              <li style="margin-top: 30px;">Your name Must be atleast 3 characters long but no more than 20</li>
+            </ul> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="number" class="form-control" max="10" min="10" placeholder="Contact No"
+            ng-pattern="/^[6-7-8-9][0-9]{9}$/" ng-model="contactNo" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.number.$pristine && regForm.number.$error.required) || (regForm.$submitted && regForm.number.$error.required)" style="color: red;">*This field is required</p> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="pincode" class="form-control" placeholder="Pincode" ng-model="pincode"
+             ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.pincode.$pristine && regForm.pincode.$error.required) || (regForm.$submitted && regForm.pincode.$error.required)" style="color: red;">*This field is required</p> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="currentAddress" class="form-control" placeholder="Current Address"
+             ng-model="currentAddress" class="form-control" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.currentAddress.$pristine && regForm.currentAddress.$error.required) || (regForm.$submitted && regForm.currentAddress.$error.required)" style="color: red;">*This field is required</p> -->
+          </div>
+
+          <div class="col-md-4">
+            <input type="date" name="dob" class="form-control" ng-model="dob" style="padding-bottom: 7px; padding-top: 7px; width: 70%;" ng-disabled="disabled" required>
+            <!-- <p ng-show="(!regForm.dob.$pristine && regForm.dob.$error.required) || (regForm.$submitted && regForm.dob.$error.required)" style="color: red;">*This field is required</p> -->
+          </div>
+
+          <div class="col-md-8">
+            <br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" ng-model="gender.model">
+              <option ng-repeat="option in gender.availableOptions" value="{{option.name}}">
+                {{ option.name }}
+              </option>
+            </select>
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary" ng-disabled="disabled" style="margin-top: 19px;">Submit</button>
+        <br>
+        <div class="row show-hide-message" ng-show="successMsg">
+          <div class="alert alert-success" role="alert">
+            {{ successMsg }}
+          </div>
+        </div>
+        <div class="row show-hide-message" ng-show="msg">
+          <div class="alert alert-danger" role="alert">
+            {{ msg }}
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
